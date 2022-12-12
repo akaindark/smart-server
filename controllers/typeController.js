@@ -12,4 +12,12 @@ const getAllTypes = async (req, res) => {
   return res.json(types);
 };
 
+const getAllType = async (req, res) => {
+  consttype = await Type.findAll({
+    where: {
+      id,
+    },
+  });
+};
+
 module.exports = { createType, getAllTypes };
